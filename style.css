@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
 
 html {
-  background-color: white;
+  background-color: pink;
   padding-left: 20px;
 }
 
@@ -10,5 +10,21 @@ img{
 }
 
 h1 {
-  font-family: "Poetsen One", sans-serif;
+  color: white;
+  font-family: "Playwrite RO", cursive;
+  text-align: center;
+
+}
+
+p{
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px
+}
+
+h3 {
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

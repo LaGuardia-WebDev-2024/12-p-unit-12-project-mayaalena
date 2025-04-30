@@ -17,9 +17,25 @@ Select ONE Additional
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <title>Unit 12 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      #sun {
+        src= "https://cdn.glitch.global/30402e44-bbd7-4650-b4d4-a21d4337d997/bd1a707e-93e8-48cd-83f9-26c999a02f83.image.png?v=1745971186453"
+     width= "300"
+       style="display:none"
+      }
+    </style>
   </head>
   <body>
     <button id="mem1-button">Memory #1</button>
@@ -28,34 +44,73 @@ Select ONE Additional
     <h1>My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1">My 17th B-day / Senior Sunset 💐☀️🍰💝 </h3>
+        <p class= "one">This year my birthday fell on the second day of school which also happened to be senior sunset! Being that we just got off Summer break, it was so fun to have a day spent catching up with friends. My parents got my really pretty flowers, and overall it was a beautiful day!</p>
+<img
+     id= "sun"
+     src= "https://cdn.glitch.global/30402e44-bbd7-4650-b4d4-a21d4337d997/bd1a707e-93e8-48cd-83f9-26c999a02f83.image.png?v=1745971186453"
+     width= "300"
+       style="display:none"
+     />
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem2">Friendsgiving 🍂🦃🥧🍽️</h3>
+        <p class= "three">This year I had a couple friends come over for friendsgiving dinner. Each person brought either a dinner item or dessert. I had so much fun hosting and decorating the space. We had a bunch of fun and got to much on our tasty feast. I hope to keep this a tradition when we return for break from college. </p>
+        
+        <img 
+             src= "https://cdn.glitch.global/30402e44-bbd7-4650-b4d4-a21d4337d997/d3c7e86e-b5e1-494e-b30e-b7530bba33bc.image.png?v=1745969998548"
+             id= "yum"
+             style="display:none"
+             width= "300"
+             style= "display:none"
+             />
+    
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="mem3">January New Music Show 🎸🤘🤩🎹</h3>
+        <p class= "three">This January New Music Ensemble performed in the Little Flower Theater forn our winter showcase. It was a really great show with alot of awesome music. </p>
       </li>
+      <img
+           src= "https://cdn.glitch.global/30402e44-bbd7-4650-b4d4-a21d4337d997/3f5e67c3-c46e-49ff-9d19-5b67ae3dde29.image.png?v=1745971307506"
+           id= "music"
+           width= "300"
+           style= "display:none"
+           />
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "rgb(210, 64, 108 )");
+        $("#sun").show(2000);
+        $ (".one").css("color","white")
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "rgb(207, 12, 71 )");
+        
+        $(".two").css("color","white")
+        $("#yum").show(2000);
       });
 
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $("#mem3").css("color", "rgb(207, 12, 119)");
+        $ (".three").css("color","white")
+        $("#music").show(2000);
       });
+      
+ $ ("h1").css ("color","white");
+    
+      var newH1 = ("<h1>");
+      newH1.text("Good times");
+      newH1.addclass("mems");
+      $("body").append(newH1);
+      
+      
+
     </script>
   </body>
 </html>
